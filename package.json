@@ -1,0 +1,19 @@
+{
+  "name": "raber-example",
+  "version": "0.1.0",
+  "description": "Fancy Next.js app",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "build:static": "next build && next out"
+  },
+  "dependencies": {
+    "@arco-design/web-react": "^2.44.0",
+    "@emotion/react": "^11.10.5",
+    "@raber/react": "0.0.2",
+    "next": "^13.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
