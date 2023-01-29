@@ -11,7 +11,8 @@
   "dependencies": {
     "@arco-design/web-react": "^2.44.0",
     "@emotion/react": "^11.10.5",
-    "@raber/react": "0.0.2",
+    "@raber/react": "0.0.3",
+    "eslint": "8.28.0",
     "next": "^13.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
