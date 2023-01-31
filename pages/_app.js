@@ -1,8 +1,10 @@
 import Head from 'next/head';
+import { ChakraProvider } from '@chakra-ui/react'
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+    <ChakraProvider>
       <Head>
         <title>级大风级大风</title>
 
@@ -10,6 +12,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/icon.svg" />
       </Head>
       <Component {...pageProps} />
+      </ChakraProvider>
       </>
   )
 }

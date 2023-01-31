@@ -1,4 +1,5 @@
 import { BuilderComponent, getPage } from "@raber/react";
+import '../comps.js'
 
 export default ({ data }) => (
 	<main>
