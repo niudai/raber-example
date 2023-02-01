@@ -14,39 +14,54 @@ export const VButton = Visual.Comp(({
 
     // 子组件必须有一个唯一的 key，用于区分不同的子组件
 
-    const styles = useStyle();
+    // const styles = useStyle();
 
 
-    const vVariant = useEnum('variant', 
-    {
-        key: 'variant',
-        default: variant,
-        uiConfig: {
-            type: 'select',
-            options: [
-                { label: 'Solid', value: 'solid' },
-                { label: 'Outline', value: 'outline' },
-                { label: 'Ghost', value: 'ghost' },
-                { label: 'Unstyled', value: 'unstyled' },
-                { label: 'Link', value: 'link' },
-            ]
-        },
-        title: '按钮类型'
-    });
+    // const vVariant = useEnum('variant', 
+    // {
+    //     key: 'variant',
+    //     default: variant,
+    //     uiConfig: {
+    //         type: 'select',
+    //         options: [
+    //             { label: 'Solid', value: 'solid' },
+    //             { label: 'Outline', value: 'outline' },
+    //             { label: 'Ghost', value: 'ghost' },
+    //             { label: 'Unstyled', value: 'unstyled' },
+    //             { label: 'Link', value: 'link' },
+    //         ]
+    //     },
+    //     title: '按钮类型'
+    // });
 
-    const vText = useText('Text', {
-        key: 'text',
-        default: text,
-        uiConfig: {
-            type: 'input',
-            placeholder: '请输入文本'
-        },
-        title: '内部文本'
-        });
+    // const vText = useText('Text', {
+    //     key: 'text',
+    //     default: text,
+    //     uiConfig: {
+    //         type: 'input',
+    //         placeholder: '请输入文本'
+    //     },
+    //     title: '内部文本'
+    //     });
 
-    return <Button variant={variant}>{vText}</Button>;
+    return <Button variant={variant}>{text}</Button>;
 }, {
     category: 'Etherum',
     name: 'VButton',
     description: 'A simple button',
+    "schema": {
+        "type": "object",
+        "properties": {
+            "variant": {
+                "type": "string",
+                "title": "按钮类型",
+                "default": "outline"
+            },
+            "text": {
+                "type": "string",
+                "title": "内部文本",
+                "default": "button"
+            },
+        }
+    },
 });
