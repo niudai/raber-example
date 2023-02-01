@@ -1,5 +1,5 @@
-import { Visual } from "@raber/react";
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react';
+import { Visual, VisualProps } from "@raber/react";
 
 export const VButton = Visual.Comp(({
     variant,
@@ -15,6 +15,22 @@ export const VButton = Visual.Comp(({
     // 子组件必须有一个唯一的 key，用于区分不同的子组件
 
     // const styles = useStyle();
+
+    const _variant = VisualProps.useString({
+        key: 'variant',
+        default: variant,
+        uiConfig: {
+            type: 'input',
+        },
+    })
+
+    const _text = VisualProps.useString({
+        key: 'text',
+        default: text,
+        uiConfig: {
+            type: 'input',
+        },
+    })
 
 
     // const vVariant = useEnum('variant', 
@@ -44,7 +60,7 @@ export const VButton = Visual.Comp(({
     //     title: '内部文本'
     //     });
 
-    return <Button variant={variant}>{text}</Button>;
+    return <Button variant={_variant}>{_text}</Button>;
 }, {
     category: 'Etherum',
     name: 'VButton',
