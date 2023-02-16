@@ -152,14 +152,14 @@ export default ({ data }) => (
 				</div>
 
 			</div>
-			<BuilderComponent data={data} id='124b616e-3bf1-428d-abd7-5b0400a0ee5f'></BuilderComponent>
+			<BuilderComponent data={data} id='ethereum'></BuilderComponent>
 
 		</div>
 	</main>
 )
 
 export async function getServerSideProps() {
-	const data = await getPage('124b616e-3bf1-428d-abd7-5b0400a0ee5f');
+	const data = await getPage('ZXrA6EruQkdOmZXryEymXDihtSR2', 'ethereum');
 	return { props: { data } }
 }
 
