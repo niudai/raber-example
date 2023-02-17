@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import '../comps.jsx';
 import { Menu, MenuButton, MenuList, MenuItem, Box } from '@chakra-ui/react';
-import { getPage, BuilderComponent } from '@raber/react';
+import { getPage, BuilderComponent, initializeApp } from '@raber/react';
 
 import { ChevronDownIcon } from '@chakra-ui/icons';
+
+
 
 export default ({ data }) => (
 	<main>
@@ -159,7 +161,7 @@ export default ({ data }) => (
 )
 
 export async function getServerSideProps() {
-	const data = await getPage('ZXrA6EruQkdOmZXryEymXDihtSR2', 'ethereum');
+	const data = await getPage('ethereum');
 	return { props: { data } }
 }
 

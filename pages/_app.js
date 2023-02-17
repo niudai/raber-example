@@ -2,6 +2,12 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Head from 'next/head';
 import { defineStyleConfig } from '@chakra-ui/react';
 import '../global.css';
+import { initializeApp } from '@raber/react';
+
+
+initializeApp({
+	publicKey: 'ZXrA6EruQkdOmZXryEymXDihtSR2'
+})
 
 const Button = defineStyleConfig({
   // The styles all button have in common
