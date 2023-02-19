@@ -7,8 +7,7 @@ export default ({ data }) => (
 	</main>
 )
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const data = await getPage('ethereum');
-	return { props: { data } }
-  }
-  
+	return { props: { data }, revalidate: 3600 }
+}

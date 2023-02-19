@@ -1,5 +1,7 @@
 import { BuilderComponent, getPage } from "@raber/react";
 
+
+
 export default ({ data }) => (
 	<main>
 		<h1>Welcome to Next.js</h1>
@@ -7,8 +9,7 @@ export default ({ data }) => (
 	</main>
 )
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const data = await getPage('vercel');
-	return { props: { data } }
-  }
-  
+	return { props: { data }, revalidate: 3600 }
+}
