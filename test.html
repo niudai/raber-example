@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">Click me!</div>
+      </div>
+      
+      <script>
+      const inner = document.getElementById('inner');
+      const outer = document.getElementById('outer');
+      
+      inner.addEventListener('click', (event) => {
+        // event.stopPropagation();
+        event.detail = "Helloworld"
+        console.log('Inner clicked!');
+      });
+      
+      outer.addEventListener('click', (event) => {
+        console.log('Document clicked!', event.detail);
+      });
+      </script>
+      
+</body>
+</html>

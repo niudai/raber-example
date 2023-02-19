@@ -1,6 +1,8 @@
 import { Button } from '@chakra-ui/react';
 import { Visual, VisualProps } from "@raber/react";
 import { useEffect, useState } from 'react';
+import Chart from './components/eth/etheStat';
+import { AreaChartWithBackground } from './components/eth/statistic';
 
 const languages = [
     'Etérium',
@@ -158,3 +160,17 @@ Visual.registerComp(LanguageSupportWidget, {
     description: 'A simple button',
     iconUrl: "https://firebasestorage.googleapis.com/v0/b/react-builder-c9ea4.appspot.com/o/image-svgrepo-com.svg?alt=media&token=467bdd4c-080c-4d43-9851-fcbf35b430c0",
     });
+
+Visual.registerComp(AreaChartWithBackground, {
+    category: 'Etherum',
+    name: 'AreaChartWithBackground',
+    description: 'A simple button',
+    iconUrl: "https://firebasestorage.googleapis.com/v0/b/react-builder-c9ea4.appspot.com/o/image-svgrepo-com.svg?alt=media&token=467bdd4c-080c-4d43-9851-fcbf35b430c0",
+})
+
+Visual.registerComp(Chart, {
+    category: 'Etherum',
+    name: 'Chart',
+    description: 'A simple button',
+    iconUrl: "https://firebasestorage.googleapis.com/v0/b/react-builder-c9ea4.appspot.com/o/image-svgrepo-com.svg?alt=media&token=467bdd4c-080c-4d43-9851-fcbf35b430c0",
+})
