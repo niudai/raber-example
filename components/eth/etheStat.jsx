@@ -1,6 +1,6 @@
-import React from 'react';
 import { Visual } from '@raber/react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import React from 'react';
+import { Area, AreaChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 const data = [
     { name: 'Page A', uv: 4000, pv: 2400, amt: 2400 },
@@ -12,21 +12,7 @@ const data = [
     { name: 'Page G', uv: 3490, pv: 4300, amt: 2100 },
 ];
 
-const CustomTooltip = ({ active, payload, label }) => {
-    if (active) {
-        return (
-            <div className="custom-tooltip">
-                <p className="label">{`Page ${label}`}</p>
-                <p className="pv">{`PV: ${payload[0].value}`}</p>
-                <p className="uv">{`UV: ${payload[1].value}`}</p>
-            </div>
-        );
-    }
-
-    return null;
-};
-
-const Chart = () => {
+export const Chart = () => {
     return (
         <div style={{
             width: '100%',
@@ -61,5 +47,3 @@ const Chart = () => {
 
     );
 };
-
-export default Chart;

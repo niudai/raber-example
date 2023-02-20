@@ -1,7 +1,7 @@
 import { Button } from '@chakra-ui/react';
 import { Visual, VisualProps } from "@raber/react";
 import { useEffect, useState } from 'react';
-import Chart from './components/eth/etheStat';
+import { Chart } from './components/eth/etheStat';
 import { AreaChartWithBackground } from './components/eth/statistic';
 
 const languages = [

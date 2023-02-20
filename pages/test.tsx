@@ -2,7 +2,7 @@ import Head from 'next/head';
 import '../comps.jsx';
 
 import { AreaChartWithBackground } from '../components/eth/statistic.jsx';
-import Chart from '../components/eth/etheStat.jsx';
+import { Chart } from '../components/eth/etheStat.jsx';
 
 
 
@@ -25,7 +25,7 @@ export default ({ data }) => (
 			{/* <div style={{
 				width: 100
 			}}> */}
-				<AreaChartWithBackground />
+				{/* <AreaChartWithBackground /> */}
 			{/* </div> */}
 			{/* <div style={{
 				width: 100
