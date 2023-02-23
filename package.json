@@ -9,7 +9,6 @@
     "build:static": "next build && next out"
   },
   "dependencies": {
-    "@arco-design/web-react": "^2.44.0",
     "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
