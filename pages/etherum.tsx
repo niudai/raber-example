@@ -1,9 +1,9 @@
-import { BuilderComponent, getPage } from "@raber/react";
+import { Canvas, getPage } from "@raber/react";
 
 export default ({ data }) => (
 	<main>
 		<h1>Welcome to Next.js</h1>
-		<BuilderComponent data={data} id="ethereum"></BuilderComponent>
+		<Canvas data={data} id="ethereum"></Canvas>
 	</main>
 )
 

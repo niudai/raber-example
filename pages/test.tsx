@@ -1,10 +1,5 @@
 import Head from 'next/head';
-import '../comps.jsx';
-
-import { AreaChartWithBackground } from '../components/eth/statistic.jsx';
-import { Chart } from '../components/eth/etheStat.jsx';
-
-
+import { Chart } from '../components/eth/etheStat';
 
 export default ({ data }) => (
 	<main>

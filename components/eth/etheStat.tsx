@@ -1,4 +1,4 @@
-import { Visual } from '@raber/react';
+import * as Raber from '@raber/react';
 import React from 'react';
 import { Area, AreaChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
@@ -19,7 +19,7 @@ export const Chart = () => {
             height: '100%',
             position: 'relative'
         }}>
-            <Visual.Box name="main" key="main" />
+            <Raber.Box name="main" key="main" />
             <ResponsiveContainer width='100%' height='100%'>
                 <AreaChart data={data} style={{
                     position: 'absolute',

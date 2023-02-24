@@ -1,5 +1,5 @@
 import { Button } from '@chakra-ui/react';
-import { Visual, VisualProps } from "@raber/react";
+import { Comp, useString, } from "@raber/react";
 import { useEffect, useState } from 'react';
 import { Chart } from './components/eth/etheStat';
 import { AreaChartWithBackground } from './components/eth/statistic';
@@ -32,7 +32,7 @@ export const LanguageSupportWidget = () => {
     )
 }
 
-export const VButton = ({
+export const VButton = Comp(({
     variant,
     text
 }) => {
@@ -47,28 +47,28 @@ export const VButton = ({
 
     // const styles = useStyle();
 
-    const _variant = VisualProps.useString({
+    const _variant = useString({
         type: 'string',
         key: 'variant',
         default: variant,
         uiConfig: {
             label: 'Variant',
             widget: 'select',
-            options:   [
+            options: [
                 { label: 'Solid', value: 'solid' },
                 { label: 'Outline', value: 'outline' },
             ]
         },
     })
 
-    const colorScheme = VisualProps.useString({
+    const colorScheme = useString({
         type: 'string',
         key: 'colorScheme',
         default: 'blue',
         uiConfig: {
             label: 'Color Scheme',
             widget: 'select',
-            options:   [
+            options: [
                 { label: 'Blue', value: 'blue' },
                 { label: 'Red', value: 'red' },
                 { label: 'Green', value: 'green' },
@@ -78,14 +78,14 @@ export const VButton = ({
         },
     })
 
-    const size = VisualProps.useString({
+    const size = useString({
         type: 'string',
         key: 'size',
         default: 'md',
         uiConfig: {
             label: 'Size',
             widget: 'select',
-            options:   [
+            options: [
                 { label: 'Small', value: 'sm' },
                 { label: 'Medium', value: 'md' },
                 { label: 'Large', value: 'lg' },
@@ -94,7 +94,7 @@ export const VButton = ({
     });
 
 
-    const _text = VisualProps.useString({
+    const _text = useString({
         type: 'string',
         key: 'text',
         default: text,
@@ -104,7 +104,7 @@ export const VButton = ({
         },
     })
 
-    const href = VisualProps.useString({
+    const href = useString({
         type: 'string',
         key: 'href',
         default: '',
@@ -114,61 +114,35 @@ export const VButton = ({
         },
     })
 
-    //     key: 'variant',
-    //     default: variant,
-    //     uiConfig: {
-    //         type: 'select',
-    //         options: [
-    //             { label: 'Solid', value: 'solid' },
-    //             { label: 'Outline', value: 'outline' },
-    //             { label: 'Ghost', value: 'ghost' },
-    //             { label: 'Unstyled', value: 'unstyled' },
-    //             { label: 'Link', value: 'link' },
-    //         ]
-    //     },
-    //     title: '按钮类型'
-    // });
-
-    // const vText = useText('Text', {
-    //     key: 'text',
-    //     default: text,
-    //     uiConfig: {
-    //         type: 'input',
-    //         placeholder: '请输入文本'
-    //     },
-    //     title: '内部文本'
-    //     });
-
     return <Button variant={_variant} onClick={() => {
         // go to href
-    if (href) {
-        window.open(href, '_blank')
-    }      
+        if (href) {
+            window.open(href, '_blank')
+        }
 
     }} size={size}>{_text}</Button>;
-};
-
-Visual.registerComp(VButton, {
+}, {
     category: 'Etherum',
     name: 'VButton',
     description: 'A simple button',
 });
 
-Visual.registerComp(LanguageSupportWidget, {
+
+Comp(LanguageSupportWidget, {
     category: 'Etherum',
     name: 'LanguageSupportWidget',
     description: 'A simple button',
     iconUrl: "https://firebasestorage.googleapis.com/v0/b/react-builder-c9ea4.appspot.com/o/image-svgrepo-com.svg?alt=media&token=467bdd4c-080c-4d43-9851-fcbf35b430c0",
-    });
+});
 
-Visual.registerComp(AreaChartWithBackground, {
+Comp(AreaChartWithBackground, {
     category: 'Etherum',
     name: 'AreaChartWithBackground',
     description: 'A simple button',
     iconUrl: "https://firebasestorage.googleapis.com/v0/b/react-builder-c9ea4.appspot.com/o/image-svgrepo-com.svg?alt=media&token=467bdd4c-080c-4d43-9851-fcbf35b430c0",
 })
 
-Visual.registerComp(Chart, {
+Comp(Chart, {
     category: 'Etherum',
     name: 'Chart',
     description: 'A simple button',

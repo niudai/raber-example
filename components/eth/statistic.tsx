@@ -1,6 +1,6 @@
-import { Visual } from '@raber/react';
-import { useEffect, useState } from 'react';
-import { AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area, LineChart, Line, ResponsiveContainer } from 'recharts';
+import { Box } from '@raber/react';
+import { useState } from 'react';
+import { Area, AreaChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const data = [
   { name: 0, uv: 40, pv: 2400, amt: 2400 },
@@ -39,7 +39,7 @@ export const AreaChartWithBackground = () => {
     >
     {/* <ResponsiveContainer width={300} height={200}> */}
 
-    <Visual.Box name="main"/>
+    <Box name="main"/>
     <AreaChart data={data} width={width} height={height} style={{
         position: 'absolute',
         top: 0,

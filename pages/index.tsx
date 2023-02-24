@@ -1,11 +1,6 @@
-import { BuilderComponent, getPage } from '@raber/react';
+import { Canvas, getPage } from '@raber/react';
 import Head from 'next/head';
-import '../comps.jsx';
-
-import { Header } from '../components/eth/header.jsx';
-import { StatisticCard } from '../components/eth/statistic.jsx';
-
-
+import { Header } from '../components/eth/header';
 
 export default ({ data }) => (
 	<main>
@@ -20,7 +15,7 @@ export default ({ data }) => (
 			margin: 'auto'
 		}}>
 			<Header />
-			<BuilderComponent data={data} id='ethereum'></BuilderComponent>
+			<Canvas data={data} id='ethereum'></Canvas>
 
 		</div>
 	</main>

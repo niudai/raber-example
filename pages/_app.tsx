@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { defineStyleConfig } from '@chakra-ui/react';
 import '../global.css';
 import { initializeApp } from '@raber/react';
+import '../comps';
 
 
 initializeApp({
