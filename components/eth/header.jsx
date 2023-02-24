@@ -69,7 +69,7 @@ export const Header = () => {
                                 {
                                     color: 'var(--eth-colors-primary)',
                                 }
-                            } rightIcon={<ChevronDownIcon boxSize={6} stroke={1} />} >
+                            } rightIcon={<ChevronDownIcon boxSize={6} />} >
                                 {item.text}
                                 <ChevronDownIcon boxSize={6} color={'#666666'} />
                             </MenuButton>
