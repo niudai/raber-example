@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { EthereumCard } from '../components/eth/card';
 import { Chart } from '../components/eth/etheStat';
 
 export default ({ data }) => (
@@ -13,6 +14,7 @@ export default ({ data }) => (
 			maxWidth: '1504px',
 			margin: 'auto'
 		}}> */}
+		<EthereumCard />
 		<div style={{
 			width: '100%',
 			height: '200px',

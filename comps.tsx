@@ -3,6 +3,7 @@ import { Comp, useString, } from "@raber/react";
 import { useEffect, useState } from 'react';
 import { Chart } from './components/eth/etheStat';
 import { AreaChartWithBackground } from './components/eth/statistic';
+import './components/eth/card';
 
 const languages = [
     'Etérium',
