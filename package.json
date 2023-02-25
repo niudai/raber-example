@@ -13,7 +13,7 @@
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@raber/react": "^0.0.18",
+    "@raber/react": "*",
     "eslint": "8.28.0",
     "framer-motion": "^8.5.5",
     "next": "^13.1.5",

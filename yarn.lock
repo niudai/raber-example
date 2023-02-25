@@ -1616,10 +1616,10 @@
   resolved "https://registry.npmjs.org/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@raber/react@^0.0.18":
-  version "0.0.18"
-  resolved "https://registry.npmjs.org/@raber/react/-/react-0.0.18.tgz#b89caf3607d31b6df7f8ac9c4ae78ebe07911e6c"
-  integrity sha512-nEXIGYXnhj/p+4kGDcVwE+M7l1haQ3aZaojKMpQ25hR3HT2nalNyU4/CcaCesxiw28rCnnTVzJOcEWP2nlXfTA==
+"@raber/react@*":
+  version "0.0.19"
+  resolved "https://registry.npmjs.org/@raber/react/-/react-0.0.19.tgz#3a5f8c8dc79ae183b4a960eca288b21b2820dd2f"
+  integrity sha512-C8cxo+PaKInb32iTtAyRT+7JNnKj5jEEOaxk/GqMAg+a+kGLfbRrvfrvinvvcC0hKOYPF1aUbN7S8IpCHCLSnQ==
   dependencies:
     "@emotion/react" "^11.10.5"
     firebase "^9.16.0"

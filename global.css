@@ -1,3 +1,9 @@
+@media screen and (max-width: 30em) {
+  .eth-menu {
+    display: none;
+  }
+}
+
 :host, :root, html {
   --chakra-ring-inset: var(--chakra-empty,/*!*/ /*!*/);
   --chakra-ring-offset-width: 0px;

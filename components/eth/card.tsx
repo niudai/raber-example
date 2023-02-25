@@ -5,11 +5,18 @@ import React from 'react';
 
 const Div = styled.div`
     box-shadow: var(--eth-shadows-primary);
-    min-width: 480px;
+    width: 100%;
+    height: 100%;
     &:hover {
         text-decoration: none;
         box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
     }
+    @media screen and (min-width: 62em) {
+        min-width: 480px;
+    }
+    border-radius: var(--eth-radii-sm);
+    border: var(--eth-borders-1px);
+    border-color: var(--eth-colors-text);
 `
 
 export const EthereumCard = Comp(() => {

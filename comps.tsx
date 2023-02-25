@@ -14,7 +14,7 @@ const languages = [
     'ఇథిరియూమ్'
 ]
 
-export const LanguageSupportWidget = () => {
+export const LanguageSupportWidget = Comp(() => {
     // show lang in languages randomly
     // const lang = languages[Math.floor(Math.random() * languages.length)];
 
@@ -31,7 +31,12 @@ export const LanguageSupportWidget = () => {
             <span>{lang}</span>
         </div>
     )
-}
+}, {
+    category: 'Etherum',
+    name: 'LanguageSupportWidget',
+    description: 'A simple button',
+    iconUrl: "https://firebasestorage.googleapis.com/v0/b/react-builder-c9ea4.appspot.com/o/image-svgrepo-com.svg?alt=media&token=467bdd4c-080c-4d43-9851-fcbf35b430c0",
+});
 
 export const VButton = Comp(({
     variant,
@@ -126,14 +131,6 @@ export const VButton = Comp(({
     category: 'Etherum',
     name: 'VButton',
     description: 'A simple button',
-});
-
-
-Comp(LanguageSupportWidget, {
-    category: 'Etherum',
-    name: 'LanguageSupportWidget',
-    description: 'A simple button',
-    iconUrl: "https://firebasestorage.googleapis.com/v0/b/react-builder-c9ea4.appspot.com/o/image-svgrepo-com.svg?alt=media&token=467bdd4c-080c-4d43-9851-fcbf35b430c0",
 });
 
 Comp(AreaChartWithBackground, {

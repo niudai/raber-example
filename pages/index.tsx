@@ -15,14 +15,14 @@ export default ({ data }) => (
 			margin: 'auto'
 		}}>
 			<Header />
-			<Canvas data={data} id='ethereum'></Canvas>
+			<Canvas data={data} id='flex2'></Canvas>
 
 		</div>
 	</main>
 )
 
 export async function getStaticProps() {
-	const data = await getPage('ethereum');
+	const data = await getPage('flex2');
 	return { props: { data }, revalidate: 10 }
 }
 
