@@ -1,2 +1,2 @@
 rm -rf ".next"
-cp -Rf "/Users/bytedance/code/starry/builderio/my-app/packages/react/dist" "node_modules/@raber/react"
+cp -Rf "/Users/bytedance/code/starry/builderio/raber-fe/packages/react/dist" "node_modules/@raber/react"
