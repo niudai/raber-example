@@ -23,6 +23,6 @@ export default ({ data }) => (
 
 export async function getStaticProps() {
 	const data = await getPage('flex2');
-	return { props: { data }, revalidate: 10 }
+	return { props: { data },  }
 }
 

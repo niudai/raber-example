@@ -10,5 +10,5 @@ export default ({ data }) => (
 
 export async function getStaticProps() {
 	const data = await getPage('template');
-	return { props: { data }, revalidate: 10 }
+	return { props: { data },  }
 }
